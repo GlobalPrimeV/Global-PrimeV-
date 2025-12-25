@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalPrimeValue | Saúde, Beleza & Bem-Estar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold-champagne: #E7D192;
+            --gold-dark: #C5A059;
+            --black-luxury: #0D0D0D;
+            --black-card: #161616;
+            --white-pearl: #F4F4F4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--black-luxury);
+            color: var(--white-pearl);
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* Cabeçalho */
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(231, 209, 146, 0.2);
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 6px;
+            background: linear-gradient(to right, var(--gold-champagne), var(--gold-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        .slogan {
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            color: var(--gold-champagne);
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Seção Hero */
+        .hero {
+            padding: 120px 20px;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            color: var(--white-pearl);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #ccc;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: linear-gradient(45deg, var(--gold-dark), var(--gold-champagne));
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 0px; /* Quadrado para parecer mais luxuoso */
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(231, 209, 146, 0.2);
+            filter: brightness(1.1);
+        }
+
+        /* Grid de Pilares */
+        .secao-pilares {
+            padding: 80px 10%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: var(--black-card);
+            padding: 50px 30px;
+            flex: 1;
+            min-width: 320px;
+            max-width: 500px;
+            border: 1px solid rgba(231, 209, 146, 0.1);
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        .card:hover {
+            border-color: var(--gold-champagne);
+            background-color: #1a1a1a;
+        }
+
+        .card h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold-champagne);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #aaa;
+        }
+
+        /* Rodapé */
+        footer {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #050505;
+            border-top: 1px solid rgba(231, 209, 146, 0.1);
+        }
+
+        .footer-text {
+            font-size: 0.8rem;
+            color: #666;
+            letter-spacing: 1px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .logo { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">GlobalPrimeValue</div>
+        <div class="slogan">A essência do seu bem-estar</div>
+    </header>
+
+    <section class="hero">
+        <h1>Realce sua Beleza, Priorize sua Saúde.</h1>
+        <p>Experiências exclusivas de cuidados pessoais que unem ciência e estética para o seu equilíbrio perfeito.</p>
+        <a href="#" class="cta-button">Inicie sua Experiência</a>
+    </section>
+
+    <section class="secao-pilares">
+        <div class="card">
+            <h3>Saúde Beleza & Bem estar Prime</h3>
+            <p>Da ciência e tecnologia avançada ao equilíbrio interior, entregamos soluções selecionadas para transformar sua rotina em um ritual de excelência. Alcance o máximo em saúde e bem-estar com resultados validados por quem entende de alta performance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Saúde Equilíbrio & Alta Performance</h3>
+            <p>Acesso exclusivo a consultorias e cursos online de Alta Performance. Aprenda estratégias validadas para dominar o equilíbrio entre corpo e mente, conquistando longevidade e máxima disposição através do conhecimento especializado.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text">© 2025 GlobalPrimeValue - Saúde Beleza & Bem-Estar. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
